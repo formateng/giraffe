@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Xml.Linq;
 using Rhino.Geometry;
-using Rhino.Geometry.Collections;
-using Grasshopper.Kernel;
 using PlanarMesh.PlanariseSpace;
 
 namespace PlanarMesh.WingedMeshSpace

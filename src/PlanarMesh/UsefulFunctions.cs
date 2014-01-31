@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Xml.Linq;
-using System.Text;
 using Rhino.Geometry;
 using PlanarMesh.WingedMeshSpace;
 using System.Drawing;
@@ -34,8 +32,6 @@ namespace PlanarMesh
         {
             return new Vector3f((float) pointToConvert.X, (float) pointToConvert.Y, (float) pointToConvert.Z);
         }
-
-
 
         public static void Shuffle(List<int> list, int tSeed) //shuffle a list of integers, if this is an array on zero based increasing integers then this is a good way to get random but unique items from a list
         {

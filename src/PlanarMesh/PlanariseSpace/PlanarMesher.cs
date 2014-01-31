@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using PlanarMesh.WingedMeshSpace;
 using Rhino.Geometry;
 using PlanarMesh.PlanariseSpace;

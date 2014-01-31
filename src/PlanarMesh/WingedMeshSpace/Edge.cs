@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Xml.Linq;
 using Rhino.Geometry;
 
 namespace PlanarMesh.WingedMeshSpace

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Xml.Linq;
 using Grasshopper.Kernel;
 using PlanarMesh.WingedMeshSpace;
 using Rhino.Geometry;
