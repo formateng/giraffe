@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D812041-E7F6-49F8-A51C-256D7BE47A4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlanarMesh</RootNamespace>
+    <AssemblyName>PlanarMesh</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GH_IO">
+      <HintPath>..\packages\Grasshopper.0.9.64.0\lib\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>..\packages\Grasshopper.0.9.64.0\lib\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\packages\RhinoCommon.5.5.30717.16015\lib\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component.cs" />
+    <Compile Include="PlanariseSpace\FlippedEdge.cs" />
+    <Compile Include="PlanariseSpace\Partition.cs" />
+    <Compile Include="PlanariseSpace\PlanarMesher.cs" />
+    <Compile Include="PlanariseSpace\PoppedFaceInfo.cs" />
+    <Compile Include="PlanariseSpace\Proxy.cs" />
+    <Compile Include="WingedMeshSpace\Window.cs" />
+    <Compile Include="WingedMeshSpace\Edge.cs" />
+    <Compile Include="WingedMeshSpace\Face.cs" />
+    <Compile Include="WingedMeshSpace\OffsetBrepMesh.cs" />
+    <Compile Include="WingedMeshSpace\Vertex.cs" />
+    <Compile Include="WingedMeshSpace\WingedMesh.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleGooImplementation.cs" />
+    <Compile Include="UsefulFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="practiseImage.png" />
+    <None Include="Resources\planarMesh.png" />
+    <None Include="Resources\icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "%25APPDATA%25\Grasshopper\Libraries\$(ProjectName).gha"
+                    Copy "$(TargetPath)" "$(TargetDir)\$(ProjectName).gha"
+                    Erase "$(TargetPath)"
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>False</Prefer32Bit>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+</Project>

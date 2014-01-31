@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="PlanarMesh.Component" Collapsed="True">
+    <Position X="0.5" Y="2.4" Width="1.939709" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="True" />
+      <Compartment Name="Methods" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.PlanariseSpace.FlippedEdge" Collapsed="True">
+    <Position X="0.5" Y="3.4" Width="2.022424" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.PlanariseSpace.PoppedFaceInfo" Collapsed="True">
+    <Position X="0.5" Y="4.4" Width="2.241188" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.WingedMeshSpace.Window" Collapsed="True">
+    <Position X="0.5" Y="5.3" Width="1.385465" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.PlanarMesher" Collapsed="True">
+    <Position X="0.5" Y="6.3" Width="2.143327" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.WingedMeshSpace.Edge" Collapsed="True">
+    <Position X="0.5" Y="7.2" Width="2.072965" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.PlanariseSpace.Proxy" Collapsed="True">
+    <Position X="0.5" Y="8.2" Width="3.162062" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.WingedMeshSpace.OffsetBrepMesh" Collapsed="True">
+    <Position X="0.5" Y="9.2" Width="2.464787" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.WingedMeshSpace.Vertex" Collapsed="True">
+    <Position X="0.5" Y="10.1" Width="2.457536" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.Properties.Resources" Collapsed="True">
+    <Position X="0.5" Y="11.1" Width="2.472174" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="True" />
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.UsefulFunctions" Collapsed="True">
+    <Position X="0.5" Y="12.1" Width="2.31633" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.PlanariseSpace.Partition" Collapsed="True">
+    <Position X="0.5" Y="13" Width="2.469621" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="RobotGrasshopper.TypeClass.SimpleGooImplementation" Collapsed="True">
+    <Position X="0.5" Y="0.5" Width="1.924933" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="True" />
+      <Compartment Name="Methods" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.WingedMeshSpace.Face" Collapsed="True">
+    <Position X="0.5" Y="14" Width="2.433688" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+  <Class Name="PlanarMesh.WingedMeshSpace.WingedMesh" Collapsed="True">
+    <Position X="0.5" Y="1.5" Width="3.328083" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="True" />
+      <Compartment Name="Fields" Collapsed="True" />
+    </Compartments>
+  </Class>
+</ClassDiagram>
