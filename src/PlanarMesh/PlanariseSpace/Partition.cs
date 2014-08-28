@@ -44,6 +44,21 @@ namespace PlanarMesh.PlanariseSpace
             }
         }
 
+        /// <summary>
+        /// Use this method to bypass the Lloyds clustering algorithm when the mesh to be planarised is already defined.
+        /// </summary>
+        internal void CreateProxiesFromWingedMesh()
+        {
+            // non-random equivalent of seedInitialProxies (above)
+            for (int i = 0; i < controller.numPanels; i++)
+            {
+                var normal3d = controller.wingMesh.faces[i].faceNormal;
+                var normal3f = new Vector3f((float)normal3d.X, (float)normal3d.Y, (float)normal3d.Z);
+                proxies.Add(new Proxy(proxies.Count, controller.wingMesh.faces[i].faceCentre, normal3f, i, controller.wingMesh.faces.Count, this));
+                isFaceAssigned[i] = true;
+            }
+        }
+
         internal void startCluster()
         {
             for (int i = 0; i < proxies.Count; i++)

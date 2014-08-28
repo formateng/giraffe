@@ -57,6 +57,15 @@ namespace PlanarMesh
             currentPartition.convertProxiesToWingMesh();
         }
 
+        /// <summary>
+        /// Use this method to bypass the Lloyds clustering algorithm when the mesh to be planarised is already defined.
+        /// </summary>
+        internal void CreateFromInputMesh()
+        {
+            currentPartition.proxyToMesh = wingMesh;
+            currentPartition.CreateProxiesFromWingedMesh();
+        }
+
         internal void planariseConnectivityMesh()
         {
             currentPartition.runIntersections();//this runs, whilst checking and splitting any four vertices ones
