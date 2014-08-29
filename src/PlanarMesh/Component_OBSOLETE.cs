@@ -8,10 +8,10 @@ using PlanarMesh.PlanariseSpace;
 
 namespace PlanarMesh
 {
-    public class Component : GH_Component
+    public class Component_OBSOLETE : GH_Component
     {
 
-        public Component()
+        public Component_OBSOLETE()
             : base("Planarise mesh", "PM", "Re-mesh a mesh with planar panels", "RCD", "Planar Remeshing")
         {
         }
@@ -143,6 +143,14 @@ namespace PlanarMesh
            get
             {
                 return PlanarMesh.Properties.Resources.planarMesh;
+            }
+        }
+
+        public override GH_Exposure Exposure
+        {
+            get
+            {
+                return GH_Exposure.hidden;
             }
         }
     }

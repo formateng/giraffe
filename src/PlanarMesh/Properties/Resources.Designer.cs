@@ -63,6 +63,16 @@ namespace PlanarMesh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lloydsMesh {
+            get {
+                object obj = ResourceManager.GetObject("lloydsMesh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap planarMesh {
             get {
                 object obj = ResourceManager.GetObject("planarMesh", resourceCulture);

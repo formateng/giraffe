@@ -62,7 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Component.cs" />
+    <Compile Include="PlanariseComponent.cs" />
+    <Compile Include="LloydsComponent.cs" />
+    <Compile Include="Component_OBSOLETE.cs" />
     <Compile Include="PlanariseSpace\FlippedEdge.cs" />
     <Compile Include="PlanariseSpace\Partition.cs" />
     <Compile Include="PlanariseSpace\PlanarMesher.cs" />
@@ -85,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="practiseImage.png" />
+    <Content Include="Resources\lloydsMesh.png" />
     <None Include="Resources\planarMesh.png" />
     <None Include="Resources\icon.bmp" />
   </ItemGroup>
