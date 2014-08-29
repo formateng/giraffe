@@ -12,36 +12,27 @@ namespace PlanarMesh
     {
 
         public Component()
-            : base("Planarise mesh", "PM", "Re-mesh a mesh with planar panels", "RCD", "Planar Remeshing")
+            : base("Planarise mesh", "PM", "Re-mesh a mesh with planar polygons", "RCD", "Planar Remeshing")
         {
         }
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
             //change the param access thing to have individual items, list or tree etc
-            pManager.Register_MeshParam("mesh", "m", "Mesh to planarise");
-
-            pManager.Register_IntegerParam("metric", "D/N", " 0 = euclidian error metric, 1 = normal based error metric", 1);
-
-            pManager.Register_IntegerParam("numberOfPanels", "n", "number of planar panels required for output", 90);
-
-            pManager.Register_BooleanParam("run", "R", "run planarisation", false);
+            pManager.AddMeshParameter("mesh", "m", "Mesh to planarise", GH_ParamAccess.item);
+            pManager.AddIntegerParameter("metric", "D/N", " 0 = euclidian error metric, 1 = normal based error metric", GH_ParamAccess.item, 1);
+            pManager.AddIntegerParameter("numberOfPanels", "n", "number of planar panels required for output", GH_ParamAccess.item, 90);
+            pManager.AddBooleanParameter("run", "R", "run planarisation", GH_ParamAccess.item, false);
         }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
             pManager.Register_StringParam("output", "out", "error messages from the system");
-
             pManager.Register_PlaneParam("Proxies", "P", "the planes for the proxies");
-
             pManager.Register_CurveParam("MeshAsCurves", "MC", "the connectivity mesh as a set of curves");
-
             pManager.Register_GenericParam("HLwingMesh", "WM", "the winged mesh to put into the next function");
-
             pManager.Register_VectorParam("Normals", "N", "the normals for each face");
-
             pManager.Register_PointParam("Centres", "C", "the centres for each face");
-
             pManager.Register_CurveParam("VoronoiOnMesh", "VOM", "non planar voronoi from clusters");
         }
 
@@ -84,10 +75,11 @@ namespace PlanarMesh
 
                     controller.createFirstCluster();
 
+                    //this is so much faster without the preview
                     for (int i = 0; i < 40; i++)
                     {
                         controller.iterateCluster();
-                        controller.currentPartition.drawProxies(preview);
+                        //controller.currentPartition.drawProxies(preview);
                     }
 
                     controller.createConnectivityMesh();
