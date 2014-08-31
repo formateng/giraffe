@@ -75,8 +75,8 @@ namespace PlanarMesh
                     //create wingedmesh from rhinomesh
                     WingedMesh myMesh = new WingedMesh(errorContainer, baseMesh);
                     myMesh.calculateNormals();
-                    this.AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, myMesh.faces.Count.ToString() + " faces in wingMesh");
-                    this.AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, myMesh.vertices.Count.ToString() + " vertices in wingMesh");
+                    //this.AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, myMesh.faces.Count.ToString() + " faces in wingMesh");
+                    //this.AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, myMesh.vertices.Count.ToString() + " vertices in wingMesh");
 
                     PlanarMesher controller = new PlanarMesher(errorContainer, myMesh, null, myMesh.faces.Count, -1, preview);
 
@@ -120,7 +120,7 @@ namespace PlanarMesh
 
             foreach (var item in errorContainer)
             {
-                this.AddRuntimeMessage(GH_RuntimeMessageLevel.Error, item);
+                this.AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, item);
             }
         }
 

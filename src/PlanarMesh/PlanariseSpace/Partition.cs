@@ -371,7 +371,8 @@ namespace PlanarMesh.PlanariseSpace
                 CurveIntersections intersections = Intersection.CurveSelf(curve, 0.1);
                 if (intersections.Count > 0)
                 {
-                    controller.errorContainer.Add(intersections.Count.ToString());
+                    controller.errorContainer.Add("Flipped edge check: " +
+                        intersections.Count.ToString() + " intersection(s) found");
                     for (int j = 0; j < intersections.Count; j++)
                     {
                         IntersectionEvent intersection = intersections[j];
