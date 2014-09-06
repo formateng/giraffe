@@ -20,17 +20,12 @@ namespace PlanarMesh
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
             pManager.AddCurveParameter("mesh", "m", "Mesh to planarise (as boundary curves)", GH_ParamAccess.list);
-            //pManager.AddBooleanParameter("run", "R", "run planarisation", GH_ParamAccess.item, false);
         }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            //pManager.AddTextParameter("output", "out", "error messages from the system", GH_ParamAccess.list);
             pManager.AddPlaneParameter("Proxies", "P", "the planes for the proxies", GH_ParamAccess.list);
             pManager.AddCurveParameter("MeshAsCurves", "MC", "the connectivity mesh as a set of curves", GH_ParamAccess.list); // TODO: replace with Plankton
-            //pManager.Register_GenericParam("HLwingMesh", "WM", "the winged mesh to put into the next function");
-            pManager.AddVectorParameter("Normals", "N", "the normals for each face", GH_ParamAccess.list);
-            pManager.AddPointParameter("Centres", "C", "the centres for each face", GH_ParamAccess.list);
         }
 
         protected override void SolveInstance(IGH_DataAccess DA)
@@ -42,7 +37,6 @@ namespace PlanarMesh
 
             //declare placeholder variables and assign initial empty mesh
             List<Curve> baseCurves = new List<Curve>();
-            Boolean run = true; // TODO: remove
 
             //Retrieve input data
             if (!DA.GetDataList(0, baseCurves))
@@ -66,56 +60,41 @@ namespace PlanarMesh
                  }
 	        }
 
-            if (run)
+            try // catch any unexpected errors
             {
-                try
+                // TODO: disjoint mesh check
+
+                //create wingedmesh from rhinomesh
+                WingedMesh myMesh = new WingedMesh(errorContainer, baseMesh);
+                myMesh.calculateNormals();
+
+                PlanarMesher controller = new PlanarMesher(errorContainer, myMesh, null, myMesh.faces.Count, -1, preview);
+
+                controller.CreateFromInputMesh();
+                controller.createConnectivityMesh();
+                controller.planariseConnectivityMesh();
+
+                //convert faces edges to polylines for viewing
+                List<Polyline> boundaryEdges = controller.currentPartition.proxyToMesh.convertWingedMeshToPolylines();
+
+                List<Plane> proxyPlanes = new List<Plane>();
+                foreach (Proxy proxy in controller.currentPartition.proxies)
                 {
-                    // TODO: disjoint mesh check
-
-                    //create wingedmesh from rhinomesh
-                    WingedMesh myMesh = new WingedMesh(errorContainer, baseMesh);
-                    myMesh.calculateNormals();
-                    //this.AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, myMesh.faces.Count.ToString() + " faces in wingMesh");
-                    //this.AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, myMesh.vertices.Count.ToString() + " vertices in wingMesh");
-
-                    PlanarMesher controller = new PlanarMesher(errorContainer, myMesh, null, myMesh.faces.Count, -1, preview);
-
-                    controller.CreateFromInputMesh();
-                    controller.createConnectivityMesh();
-                    controller.planariseConnectivityMesh();
-
-                    //convert faces edges to polylines for viewing
-                    List<Polyline> boundaryEdges = controller.currentPartition.proxyToMesh.convertWingedMeshToPolylines();
-
-                    List<Plane> proxyPlanes = new List<Plane>();
-                    foreach (Proxy proxy in controller.currentPartition.proxies)
-                    {
-                        proxyPlanes.Add(proxy.rhinoPlane);
-                    }
-                    List<Mesh> proxyMeshes = new List<Mesh>();
-                    foreach (Proxy proxy in controller.currentPartition.proxies)
-                    {
-                        proxyMeshes.Add(proxy.proxyAsMesh);
-                    }
-
-                    List<Vector3d> faceNormals = new List<Vector3d>();
-                    List<Point3d> faceCentres = new List<Point3d>();
-                    for (int i = 0; i < controller.currentPartition.proxyToMesh.faces.Count; i++)
-                    {
-                        faceNormals.Add(new Vector3d(controller.currentPartition.proxyToMesh.faces[i].faceNormal));
-                        faceCentres.Add(new Point3d(controller.currentPartition.proxyToMesh.faces[i].faceCentre));
-                    }
-
-                    //set all the output data
-                    DA.SetDataList(0, proxyPlanes);
-                    DA.SetDataList(1, boundaryEdges);
-                    DA.SetDataList(2, faceNormals);
-                    DA.SetDataList(3, faceCentres);
+                    proxyPlanes.Add(proxy.rhinoPlane);
                 }
-                catch (Exception e)
+                List<Mesh> proxyMeshes = new List<Mesh>();
+                foreach (Proxy proxy in controller.currentPartition.proxies)
                 {
-                    this.AddRuntimeMessage(GH_RuntimeMessageLevel.Error, e.StackTrace);
+                    proxyMeshes.Add(proxy.proxyAsMesh);
                 }
+
+                //set all the output data
+                DA.SetDataList(0, proxyPlanes);
+                DA.SetDataList(1, boundaryEdges);
+            }
+            catch (Exception e)
+            {
+                this.AddRuntimeMessage(GH_RuntimeMessageLevel.Error, e.StackTrace);
             }
 
             foreach (var item in errorContainer)

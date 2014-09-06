@@ -18,7 +18,7 @@ namespace PlanarMesh
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
-            pManager.AddMeshParameter("mesh", "m", "Mesh to planarise", GH_ParamAccess.item);
+            pManager.AddMeshParameter("mesh", "m", "Mesh to perform clustering on", GH_ParamAccess.item);
             pManager.AddIntegerParameter("metric", "D/N", " 0 = euclidian error metric, 1 = normal based error metric", GH_ParamAccess.item, 1);
             pManager.AddIntegerParameter("numberOfFacets", "n", "number of facets required for output", GH_ParamAccess.item, 90);
         }
@@ -79,7 +79,7 @@ namespace PlanarMesh
 
             foreach (var item in errorContainer)
             {
-                this.AddRuntimeMessage(GH_RuntimeMessageLevel.Error, item);
+                this.AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, item);
             }
         }
 
