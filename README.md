@@ -1,5 +1,7 @@
 # Planar Mesh Tool for Grasshopper
 
+![yak](https://img.shields.io/badge/dynamic/json?label=yak&query=%24.version&url=https%3A%2F%2Fyak.rhino3d.com%2Fpackages%2FPlanarMesh&prefix=v)
+
 ![4_examples.png](https://raw.githubusercontent.com/formateng/giraffe/master/examples/4_examples.png)
 
 Introducing two components to generate a planar polygon tessellation of a freeform mesh:
