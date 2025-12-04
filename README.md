@@ -1,5 +1,6 @@
-<img width="32" height="32" alt="Giraffe32x32" src="https://github.com/user-attachments/assets/9555c850-fb43-4196-beb3-6606a40b81f3" />
-# Planar Mesh Tool for Grasshopper
+
+
+# <img width="32" height="32" alt="Giraffe32x32" src="https://github.com/user-attachments/assets/9555c850-fb43-4196-beb3-6606a40b81f3" /> Giraffe - Planar Mesh Tool for Grasshopper
 
 ![yak](https://img.shields.io/badge/dynamic/json?label=yak&query=%24.version&url=https%3A%2F%2Fyak.rhino3d.com%2Fpackages%2FPlanarMesh&prefix=v)
 
