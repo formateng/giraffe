@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Rhino.Geometry;
 
-namespace PlanarMesh.WingedMeshSpace
+namespace Giraffe.WingedMeshSpace
 {
     public class Vertex
     {

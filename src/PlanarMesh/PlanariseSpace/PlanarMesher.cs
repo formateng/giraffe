@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 using Rhino.Geometry;
-using PlanarMesh.PlanariseSpace;
+using Giraffe.PlanariseSpace;
 using Grasshopper.Kernel;
 
-namespace PlanarMesh
+namespace Giraffe
 {
     class PlanarMesher
     {

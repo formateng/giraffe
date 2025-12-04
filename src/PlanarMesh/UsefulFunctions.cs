@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Rhino.Geometry;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 using System.Drawing;
 
-namespace PlanarMesh
+namespace Giraffe
 {
     class UsefulFunctions
     {

@@ -1,18 +1,18 @@
 ﻿using System;
 using Grasshopper.Kernel;
 using System.Drawing;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 using System.Collections.Generic;
 using Rhino.Geometry;
-using PlanarMesh.PlanariseSpace;
+using Giraffe.PlanariseSpace;
 
-namespace PlanarMesh
+namespace Giraffe
 {
     public class LloydsComponent : GH_Component
     {
 
         public LloydsComponent()
-            : base("Lloyds", "Ll", "Lloyds clustering algorithm", "RCD", "Remeshing")
+            : base("Lloyds", "Ll", "Lloyds clustering algorithm", "Giraffe", "Remeshing")
         {
         }
 
@@ -96,7 +96,7 @@ namespace PlanarMesh
         {
             get
             {
-                return PlanarMesh.Properties.Resources.lloydsMesh;
+                return Giraffe.Properties.Resources.lloydsMesh;
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PlanarMesh.PlanariseSpace
+namespace Giraffe.PlanariseSpace
 {
     class PoppedFaceInfo//definitely should be a class so if is passed by value not reference!
     {

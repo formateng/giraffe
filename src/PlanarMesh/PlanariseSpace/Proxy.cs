@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Rhino.Geometry;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 
-namespace PlanarMesh.PlanariseSpace
+namespace Giraffe.PlanariseSpace
 {
     class Proxy
     {

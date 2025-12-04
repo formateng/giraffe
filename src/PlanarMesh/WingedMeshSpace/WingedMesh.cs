@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Rhino.Geometry;
-using PlanarMesh.PlanariseSpace;
+using Giraffe.PlanariseSpace;
 
-namespace PlanarMesh.WingedMeshSpace
+namespace Giraffe.WingedMeshSpace
 {
     public class WingedMesh : RobotGrasshopper.TypeClass.SimpleGooImplementation
     {

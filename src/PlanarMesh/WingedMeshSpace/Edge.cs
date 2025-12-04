@@ -1,7 +1,7 @@
 ﻿using System;
 using Rhino.Geometry;
 
-namespace PlanarMesh.WingedMeshSpace
+namespace Giraffe.WingedMeshSpace
 {
     public class Edge
     {

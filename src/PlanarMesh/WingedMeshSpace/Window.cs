@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PlanarMesh.WingedMeshSpace
+namespace Giraffe.WingedMeshSpace
 {
     public class Window
     {

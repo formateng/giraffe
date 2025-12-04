@@ -1,8 +1,8 @@
 ﻿using System;
 using Rhino.Geometry;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 
-namespace PlanarMesh.PlanariseSpace
+namespace Giraffe.PlanariseSpace
 {
     class FlippedEdge
     {

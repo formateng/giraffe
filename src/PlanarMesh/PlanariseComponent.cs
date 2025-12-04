@@ -1,19 +1,19 @@
 ﻿using System;
 using Grasshopper.Kernel;
 using System.Drawing;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 using System.Collections.Generic;
 using Rhino.Geometry;
-using PlanarMesh.PlanariseSpace;
+using Giraffe.PlanariseSpace;
 using System.Linq;
 
-namespace PlanarMesh
+namespace Giraffe
 {
     public class PlanariseComponent : GH_Component
     {
 
         public PlanariseComponent()
-            : base("Planarise mesh", "PM", "Re-mesh a mesh with planar panels", "RCD", "Remeshing")
+            : base("Planarise mesh", "PM", "Re-mesh a mesh with planar panels", "Giraffe", "Remeshing")
         {
         }
 
@@ -116,7 +116,7 @@ namespace PlanarMesh
         {
            get
             {
-                return PlanarMesh.Properties.Resources.planarMesh;
+                return Giraffe.Properties.Resources.planarMesh;
             }
         }
     }

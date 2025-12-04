@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Grasshopper.Kernel;
-using PlanarMesh.WingedMeshSpace;
+using Giraffe.WingedMeshSpace;
 using Rhino.Geometry;
 using Rhino.Geometry.Intersect;
 using System.Drawing;
 
-namespace PlanarMesh.PlanariseSpace
+namespace Giraffe.PlanariseSpace
 {
     class Partition
     {

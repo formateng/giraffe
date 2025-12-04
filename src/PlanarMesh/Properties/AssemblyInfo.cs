@@ -1,36 +1,43 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+﻿using Grasshopper;
+using Grasshopper.Kernel;
+using Giraffe.Properties;
+using System;
+using System.Drawing;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("PlanarMesh")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Ramboll UK Ltd.")]
-[assembly: AssemblyProduct("PlanarMesh")]
-[assembly: AssemblyCopyright("Copyright ©  2012-2014")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+namespace Giraffe
+{
+    public class GiraffeInfo : GH_AssemblyInfo
+    {
+        public override string Name => "Giraffe";
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+        //Return a 24x24 pixel bitmap to represent this GHA library.
+        public override Bitmap Icon => Resources.Giraffe24x24;
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8267b9c1-8cc7-4284-b6cf-0d913d312ba8")]
+        //Return a short string describing the purpose of this GHA library.
+        public override string Description => "A tool for creating planar faces on input mesh with double curvature";
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.0")]
-[assembly: AssemblyFileVersion("0.1.0")]
+        public override Guid Id => new Guid("8267b9c1-8cc7-4284-b6cf-0d913d312ba8");
+
+        //Return a string identifying you or your company.
+        public override string AuthorName => "Format Engineers";
+
+        //Return a string representing your preferred contact details.
+        public override string AuthorContact => "info@formatengineers.com";
+
+        //Set plugin version
+        public override string Version => "0.1.1";
+
+        //Return a string representing the version.  This returns the same version as the assembly.
+        public override string AssemblyVersion => GetType().Assembly.GetName().Version.ToString();
+    }
+
+    public class GiraffeCategoryIcon : GH_AssemblyPriority
+    {
+        public override GH_LoadingInstruction PriorityLoad()
+        {
+            Instances.ComponentServer.AddCategoryIcon("Giraffe", Resources.Giraffe16x16);
+            Instances.ComponentServer.AddCategorySymbolName("Giraffe", 'G');
+            return GH_LoadingInstruction.Proceed;
+        }
+    }
+}

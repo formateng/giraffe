@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Rhino.Geometry;
 
-namespace PlanarMesh.WingedMeshSpace
+namespace Giraffe.WingedMeshSpace
 {
     // the collection of breps that corresponds to the wingedMesh
     class OffsetBrepMesh
