@@ -25,7 +25,7 @@ namespace Giraffe
         public override string AuthorContact => "info@formatengineers.com";
 
         //Set plugin version
-        public override string Version => "0.1.1";
+        public override string Version => "0.1.2";
 
         //Return a string representing the version.  This returns the same version as the assembly.
         public override string AssemblyVersion => GetType().Assembly.GetName().Version.ToString();

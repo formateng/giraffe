@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\Giraffe.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\Giraffe.csproj|solutionrelative:planarmesh\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\planarisespace\\planarmesher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\planarisespace\\planarmesher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\usefulfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\usefulfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\component_obsolete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\component_obsolete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\planarisecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\planarisecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\lloydscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\lloydscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|c:\\users\\matt c\\documents\\github\\giraffe\\src\\planarmesh\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\PlanarMesh.csproj|solutionrelative:planarmesh\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\Giraffe.csproj|C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\planarmesh\\lloydscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D812041-E7F6-49F8-A51C-256D7BE47A4E}|PlanarMesh\\Giraffe.csproj|solutionrelative:planarmesh\\lloydscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,72 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlanarMesher.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\PlanariseSpace\\PlanarMesher.cs",
-              "RelativeDocumentMoniker": "PlanarMesh\\PlanariseSpace\\PlanarMesher.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\PlanariseSpace\\PlanarMesher.cs",
-              "RelativeToolTip": "PlanarMesh\\PlanariseSpace\\PlanarMesher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T12:15:55.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsefulFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\UsefulFunctions.cs",
-              "RelativeDocumentMoniker": "PlanarMesh\\UsefulFunctions.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\UsefulFunctions.cs",
-              "RelativeToolTip": "PlanarMesh\\UsefulFunctions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T12:15:50.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlanariseComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\PlanariseComponent.cs",
-              "RelativeDocumentMoniker": "PlanarMesh\\PlanariseComponent.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\PlanariseComponent.cs",
-              "RelativeToolTip": "PlanarMesh\\PlanariseComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T12:15:31.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LloydsComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\LloydsComponent.cs",
-              "RelativeDocumentMoniker": "PlanarMesh\\LloydsComponent.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\LloydsComponent.cs",
-              "RelativeToolTip": "PlanarMesh\\LloydsComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T12:15:21.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Properties\\Resources.Designer.cs",
-              "RelativeDocumentMoniker": "PlanarMesh\\Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Properties\\Resources.Designer.cs",
-              "RelativeToolTip": "PlanarMesh\\Properties\\Resources.Designer.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowEMAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T12:11:52.401Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -117,39 +32,22 @@
               "RelativeDocumentMoniker": "PlanarMesh\\Properties\\AssemblyInfo.cs",
               "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "PlanarMesh\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T11:57:27.143Z",
+              "WhenOpened": "2025-12-04T13:52:07.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "PlanarMesh\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Properties\\Resources.resx",
-              "RelativeToolTip": "PlanarMesh\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-04T11:56:54.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Component_OBSOLETE.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Component_OBSOLETE.cs",
-              "RelativeDocumentMoniker": "PlanarMesh\\Component_OBSOLETE.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\Component_OBSOLETE.cs",
-              "RelativeToolTip": "PlanarMesh\\Component_OBSOLETE.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAA0wA4AAABYAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LloydsComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\LloydsComponent.cs",
+              "RelativeDocumentMoniker": "PlanarMesh\\LloydsComponent.cs",
+              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\giraffe\\src\\PlanarMesh\\LloydsComponent.cs",
+              "RelativeToolTip": "PlanarMesh\\LloydsComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T11:55:26.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-12-04T13:26:25.09Z"
             },
             {
               "$type": "Bookmark",

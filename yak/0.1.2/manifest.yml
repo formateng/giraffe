@@ -1,0 +1,13 @@
+---
+name: Giraffe
+version: 0.1.2
+authors:
+- Format Engineers
+description: A tool for creating planar faces on an input mesh with double Gaussian curvature
+url: https://github.com/formateng/giraffe
+icon: icon.png
+keywords:
+- planar
+- mesh
+- relationalisation
+- doubleCurvature
