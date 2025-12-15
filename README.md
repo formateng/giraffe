@@ -15,6 +15,8 @@ Originally developed for the TRADA Pavilion and based on the process described b
 
 This open source project is released under the [MIT licence](https://github.com/formateng/giraffe/blob/master/LICENSE).
 
+Avaliable on [Food4Rhino](https://www.food4rhino.com/en/app/giraffe-0)
+
 There are four example files:
 
  * (a) Positively curved sphere (Euclidean based metric)
